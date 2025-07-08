@@ -24,11 +24,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, resp) => {
+app.use(express.static('dist')) // serve static web page
 
-    console.log('basic URL')
-    resp.send('<h1>Hei world!</h1>')
-})
 app.get('/api/notes', (req, resp) => {
     resp.json(notes)
 })
