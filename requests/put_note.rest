@@ -1,9 +1,9 @@
-PUT http://localhost:3001/api/notes/:1
+PUT http://localhost:3001/api/notes/68e020e39f52728130b30c0c
 Content-Type: application/json
 
 {
-    "id": "1",
-    "content": "HTML is easy",
+    "id": "68e020e39f52728130b30c0c",
+    "content": "Nieuwe content120",
     "important": false
 }
 
